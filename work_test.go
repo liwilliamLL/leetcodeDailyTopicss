@@ -15,6 +15,7 @@ func Test_serivce(t *testing.T) {
 		{name: "TestLeetCode2021-8-11", args: []int{7, 7, 7}},
 		{name: "TestLeetCode2021-8-12", args: "bbbb"},
 		{name: "TestLeetCode2021-8-13", args: 1000},
+		{name: "TestLeetCode2021-8-16", args: 4},
 	}
 
 	for _, tt := range tests {
@@ -28,6 +29,9 @@ func Test_serivce(t *testing.T) {
 				t.Log(res)
 			case "TestLeetCode2021-8-13":
 				res := countDigitOne(tt.args.(int))
+				t.Log(res)
+			case "TestLeetCode2021-8-16":
+				res := countArrangement(tt.args.(int))
 				t.Log(res)
 			}
 		})
