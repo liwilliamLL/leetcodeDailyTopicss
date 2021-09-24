@@ -31,6 +31,7 @@ func Test_serivce(t *testing.T) {
 				res := countDigitOne(tt.args.(int))
 				t.Log(res)
 			case "TestLeetCode2021-8-16":
+				testList()
 				res := countArrangement(tt.args.(int))
 				t.Log(res)
 			}
