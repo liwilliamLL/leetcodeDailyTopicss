@@ -16,6 +16,7 @@ func Test_serivce(t *testing.T) {
 		{name: "TestLeetCode2021-8-12", args: "bbbb"},
 		{name: "TestLeetCode2021-8-13", args: 1000},
 		{name: "TestLeetCode2021-8-16", args: 4},
+		{name: "TestLeetCode2021-9-26", args: []int{7,7}},
 	}
 
 	for _, tt := range tests {
@@ -33,6 +34,9 @@ func Test_serivce(t *testing.T) {
 			case "TestLeetCode2021-8-16":
 				testList()
 				res := countArrangement(tt.args.(int))
+				t.Log(res)
+			case "TestLeetCode2021-9-26":
+				res := getSum(tt.args.([]int)[0],tt.args.([]int)[1])
 				t.Log(res)
 			}
 		})
